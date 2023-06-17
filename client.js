@@ -15,7 +15,7 @@
       console.log('Successfully connected to game server');
       // Send the name to the server
       conn.write('Name: ROG');
-      conn.write('Move: up');
+      // conn.write('Move: up');
     });
   
     // interpret incoming data as text
