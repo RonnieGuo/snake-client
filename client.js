@@ -12,7 +12,9 @@
     //The .on method lets you specify an event name and a function that does something when that event happens.
     conn.on("connect", () => {
       // code that does something when the connection is first established
-      console.log('You are connected');
+      console.log('Successfully connected to game server');
+      // Send the name to the server
+      conn.write('Name: ROG');
     });
   
     // interpret incoming data as text
