@@ -16,7 +16,7 @@ const handleUserInput = function (key) {
     connection.write("Say: I'm the best!");
   } else if (key === '3') {
     connection.write("Say: I got this one!");
-  }
+  } 
 };
 
 const setupInput = function (conn) {
@@ -30,6 +30,7 @@ const setupInput = function (conn) {
       process.exit();
     }
     handleUserInput(key);
+
   });
   return stdin;
 };
